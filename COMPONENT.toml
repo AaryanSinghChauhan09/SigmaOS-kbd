@@ -3,7 +3,7 @@ name = "SigmaOS-kbd"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "kbd component"
+description = "SigmaOS SigmaOS-kbd component"
 upstream = []
 
 [contract]
