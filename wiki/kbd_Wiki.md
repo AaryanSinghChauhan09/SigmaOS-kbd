@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-kbd Component Wiki
+# SigmaOS-kbd Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-kbd provides SigmaOS SigmaOS-kbd component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-kbd provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-kbd Abstraction
-- Fail-Fast on SigmaOS-kbd Initialization Errors
-- Deterministic SigmaOS-kbd Setup
-- Clear Abstraction Over SigmaOS-kbd APIs
-- Composition over Inheritance for SigmaOS-kbd extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-kbd Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-kbd Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-kbd Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-kbd APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-kbd extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-kbd follows a SigmaOS-kbd pattern:
+SigmaOS-kbd follows a SigmaOS-kbd pattern:
 - **SigmaOS-kbd Core**: Provides SigmaOS-kbd support, SigmaOS-kbd management, and SigmaOS-kbd tracking
 - **Management**: Supports SigmaOS-kbd management, SigmaOS-kbd configuration, and SigmaOS-kbd lifecycle
 - **Tracking**: Supports SigmaOS-kbd status, SigmaOS-kbd tracking, and SigmaOS-kbd lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-kbd follows a SigmaOS-kbd pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-kbd by given configuration
--  - Register a SigmaOS-kbd by given name
--  - Get SigmaOS-kbd status and SigmaOS-kbd availability
--  - Track SigmaOS-kbd management and SigmaOS-kbd tracking
+- Manage a SigmaOS-kbd by given configuration
+- Register a SigmaOS-kbd by given name
+- Get SigmaOS-kbd status and SigmaOS-kbd availability
+- Track SigmaOS-kbd management and SigmaOS-kbd tracking
 - Error types for SigmaOS-kbd failure scenarios or unsupported SigmaOS-kbd types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-kbd init, SigmaOS-kbd management)
 3. **Assert**: Verify the expected SigmaOS-kbd results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-kbd initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-kbd failure scenarios
 - Unit tests provided for SigmaOS-kbd management and configuration
